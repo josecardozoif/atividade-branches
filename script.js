@@ -1,17 +1,15 @@
-const relogio = () => {
-    const relogioTag = document.querySelector('time')
-    let data = new Date();
-
-    let hh = data.quaisHoras();
-    let mm = data.quaisMinutos();
-    let ss = data.quaisSegundos();
-
-    hh = hh < 10 ? '0'+ hh : hh;
-    mm = mm < 10 ? '0'+ mm : mm;
-    ss = ss < 10 ? '0'+ ss : ss;
-
-    relogioTag.innerHTML = hh +':'+ mm +':'+ ss;
-}
-
-relogio()
-executar(relogio, 1000);
+const getHours = () => {
+    const clock = document.getElementsByClassName('clock')[0]
+    const date = new Date()
+    const hours = date.getHours()
+    const minutes = date.getMinutes()
+    const seconds = date.getSeconds()
+    const hour = hours < 10 ? `0${hours}` : hours
+    const minute = minutes < 10 ? `0${minutes}` : minutes
+    const second = seconds < 10 ? `0${seconds}` : seconds
+    clock.innerHTML = `${hour}:${minute}:${second}`
+  }
+  
+  setInterval(() => {
+    getHours()
+  }, 1000)

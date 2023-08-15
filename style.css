@@ -12,10 +12,15 @@ body{
     background-image: radial-gradient(circle, #63DB24 0%, #0A1604 100%);
 }
 
+.divider {
+    border: solid #0A1604 2px;
+}
+
 .container {
     height: 100vh;
     display: flex;
     justify-content: center;
+
   }
 
 .title {
@@ -37,8 +42,33 @@ body{
     font-weight: bold;
 }
 
+.hero2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .opening {
     box-shadow: 1px 1px 1px 1px #63DB24;
     margin-top: 3%;
     margin-left: 27.5%;
+    margin-bottom: 3%;
 }
+
+.clock {
+    align-items: center;
+    background-color: #63DB24;
+    border: 5px solid #0A1604;
+    border-radius: 3%;
+    color: #0A1604;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 60px;
+    height: 20%;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 2%;
+    box-shadow: 3px 3px 3px 3px #0A1604;
+  }

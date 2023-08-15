@@ -28,7 +28,7 @@ document.getElementById('game').style.visibility = 'visible';
 reset = function() { window.location.reload(); }
 		
 setLabelJogadorAtual = function() {
-	document.getElementById('jogadorAtual').innerHTML = 'Jogador atual:  ' + jogadorAtual.nome;
+	document.getElementById('jogadorAtual').innerHTML = 'Jogador Atual:  ' + jogadorAtual.nome;
 }
 
 tabuleiroIsFilled = function() {

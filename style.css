@@ -9,6 +9,7 @@ body{
     font-family: 'Chakra Petch', sans-serif;
     width: 100%;
     background-image: radial-gradient(circle, #63DB24 0%, #0A1604 100%);
+    text-align: center;
 }
 
 .container {
@@ -34,6 +35,11 @@ body{
     font-weight: bold;
 }
 
+#game{
+    display: grid;
+    justify-content: center;
+}
+
 table {
     width: 550px; 
     height: 350px; 
@@ -54,19 +60,58 @@ table tr td {
 table tr td:hover {
     cursor: pointer;
 }
+
+label {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
 	
+fieldset {
+    font-size: 20px; 
+    font-weight:bold; 
+    border:2px solid #0A1604; 
+    background-color: #63DB24;
+    width: 300px; 
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 5px;
+}
+
 input[type=button] {
     width: 150px; 
     height: 50px; 
     font-size: 20px; 
     font-weight: bold; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: #0A1604;
+    color: #63DB24;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
 }
-	
-fieldset {
-    font-size:20; 
-    font-weight:bold; 
-    border:2px solid #0A1604; 
-    width: 300px; 
-    margin-bottom: 25px;
+
+#jogador1 {
+    background-color: #63DB24;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#jogador2 {
+    background-color: #63DB24;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#jogadorAtual{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 25px; 
+    font-weight: bold; 
 }

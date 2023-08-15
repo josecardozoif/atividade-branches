@@ -29,8 +29,16 @@ body{
     padding-bottom: 3%;
 }
 
+.hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .opening {
     box-shadow: 1px 1px 1px 1px #63DB24;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 27.5%;
 }

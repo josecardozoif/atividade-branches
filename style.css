@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    width: 100%;
+    background-image: radial-gradient(circle, #63DB24 0%, #0A1604 100%);
+}
+
+.container {
+    height: 90vh;
+  }
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    box-shadow: 1px 1px #63DB24;
+    background-color: #0A1604;
+    color: #63DB24;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.hero {
+    color: #63DB24;
+    font-size: 20px;
+    margin-left: 4%;
+}
+
+.fundo{
+    height: 100vh;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    margin-left: 4%;
+}
+
+.calculadora{
+    position: absolute;
+    background-color: #0A1604;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: bold;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: #63DB24;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.botao:hover{
+    background-color: black;
+}
+
+#resultado{
+    width: 207px;
+    background-color: white;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

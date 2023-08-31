@@ -1,15 +1,26 @@
-const getHours = () => {
-    const clock = document.getElementsByClassName('clock')[0]
-    const date = new Date()
-    const hours = date.getHours()
-    const minutes = date.getMinutes()
-    const seconds = date.getSeconds()
-    const hour = hours < 10 ? `0${hours}` : hours
-    const minute = minutes < 10 ? `0${minutes}` : minutes
-    const second = seconds < 10 ? `0${seconds}` : seconds
-    clock.innerHTML = `${hour}:${minute}:${second}`
-  }
-  
-  setInterval(() => {
-    getHours()
-  }, 1000)
+function insert(num)
+{
+    var numero = document.getElementsId('resultado').innerHTML;
+    document.getElementsId('resultado').innerHTML = numero + num;
+}
+function clean()
+{
+    document.getElementsId('resultado').innerHTML = "";
+}
+function back()
+{
+    var resultado = document.getElementsId('resultado').innerHTML;
+    document.getElementsId('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+}
+function calcular()
+{
+    var resultado = document.getElementsId('resultado').innerHTML;
+    if(resultado)
+    {
+        document.getElementsId('resultado').innerHTML = eval(resultado);
+    }
+    else
+    {
+        document.getElementsId('resultado').innerHTML = "Nada..."
+    }
+}

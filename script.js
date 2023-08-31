@@ -1,6 +1,6 @@
 window.onload =	function() { document.getElementById('game').style.visibility = 'hidden' };
 		
-function Jogador(nome, forma) {
+function Jogad0r(nome, forma) {
 	this.nome = nome;
 	this.forma = forma;
 }
